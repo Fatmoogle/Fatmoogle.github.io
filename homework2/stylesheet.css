@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*** Index HTML ***/
+
+nav {
+    font-family: 'Oswald', sans-serif;
+    font-size: 30px;
+}
+
+.navbar-brand {
+    font-size: 40px;
+    letter-spacing: 2px;
+    margin-left: 20px;
+}
+
+body {
+    background: url(https://img.freepik.com/free-photo/old-gray-cement-wall-backgrounds_34552-324.jpg?size=626&ext=jpg);
+    background-size: 100%;
+    font-family: 'Oswald', sans-serif; 
+    font-weight: 300;
+}
+
+.solid-line {
+    border-style: solid;
+    border: 5px lightseagreen;
+    height: 5px;
+    background-color: lightseagreen;
+    margin: 10px;
+}
+
+footer {
+    margin-top: auto;
+    padding: 15px;
+    background-color: darkgrey;
+    color: black;
+    text-align: center;
+}
