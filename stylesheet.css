@@ -26,8 +26,11 @@ body {
     background-size: 100%;
     font-family: 'Oswald', sans-serif; 
     font-weight: 300;
-    height: 100%;
+    /*height: 100%;*/
     width: 100%;
+    display: flex; 
+    flex-direction: column; 
+    height: 100vh;
 }
 
 
@@ -40,12 +43,15 @@ body {
 }
 
 footer {
+    flex-shrink: 0;
+    left: 0;
+    bottom: 0;
     padding: 15px;
     width: 100%;
     background-color: darkgrey;
     color: black;
     text-align: center;
-    
+   
 }
 
 @media 
