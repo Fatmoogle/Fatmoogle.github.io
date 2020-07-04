@@ -27,7 +27,7 @@ body {
     font-family: 'Oswald', sans-serif; 
     font-weight: 300;
     height: 100%;
-   
+    width: 100%;
 }
 
 
@@ -45,5 +45,4 @@ footer {
     background-color: darkgrey;
     color: black;
     text-align: center;
-   
 }
