@@ -58,11 +58,12 @@ footer {
     text-align: center;
 }
 
+/*** Media Queries ***/
+
 @media (max-width: 400px) {
     body {
         font-size: 20px;
     }
-
     .container img {
         float: none;
         margin: auto;
