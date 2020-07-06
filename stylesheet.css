@@ -1,10 +1,11 @@
+/*** CSS Reset ***/
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/*** Index HTML ***/
+/*** Navbar Element For All Pages ***/
 
 nav {
     font-family: 'Oswald', sans-serif;
@@ -20,6 +21,7 @@ nav {
     margin-left: 20px;
 }
 
+/*** Navbar Element For All Pages ***/
 
 body {
     background: url(https://img.freepik.com/free-photo/old-gray-cement-wall-backgrounds_34552-324.jpg?size=626&ext=jpg);
@@ -33,6 +35,7 @@ body {
     height: 100vh;
 }
 
+/*** Decorative Line for Contact and About Me Page ***/
 
 .solid-line {
     border-style: solid;
@@ -41,6 +44,8 @@ body {
     background-color: lightseagreen;
     margin: 10px;
 }
+
+/*** Footer ***/
 
 footer {
     flex-shrink: 0;
@@ -51,7 +56,4 @@ footer {
     background-color: darkgrey;
     color: black;
     text-align: center;
-   
 }
-
-@media 
