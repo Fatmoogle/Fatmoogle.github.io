@@ -57,3 +57,15 @@ footer {
     color: black;
     text-align: center;
 }
+
+@media (max-width: 400px) {
+    body {
+        font-size: 20px;
+    }
+
+    .container img {
+        float: none;
+        margin: auto;
+        margin-bottom: 15px;
+    }
+}
