@@ -37,7 +37,6 @@ body {
 }
 
 .portfolio-item {
-    background: teal; 
     font-weight: bold; 
     display: flex; 
     justify-content: center; 
@@ -46,18 +45,25 @@ body {
 
 .one {
     grid-row: span 3;
+    background-image: url("Assets/Images/Dinner-Dice-Portfolio.PNG");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .two {
-    grid-row: span 3
+    grid-row: span 3;
+    background-image: url("Assets/Images/Dinner-Dice-Portfolio.PNG");
+    
 }
 
 .three {
-    grid-row: span 3
+    grid-row: span 3;
+    background-image: url("Assets/Images/Dinner-Dice-Portfolio.PNG");
 }
 
 .four {
-    grid-row: span 3
+    grid-row: span 3;
+    background-image: url("Assets/Images/Dinner-Dice-Portfolio.PNG");
 }
 
 .portfolio {
