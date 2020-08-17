@@ -24,14 +24,48 @@ nav {
 /*** Body for All Pages ***/
 
 body {
-    background: url(https://img.freepik.com/free-photo/old-gray-cement-wall-backgrounds_34552-324.jpg?size=626&ext=jpg);
+    background: rgb(214, 212, 212);
     background-size: 100%;
     font-family: 'Oswald', sans-serif; 
-    font-weight: 300;
-    width: 100%;
-    display: flex; 
-    flex-direction: column; 
+    font-weight: 350;
+}
+
+/*** Portfolio Styling ***/
+.mainContent {
+    padding: 10%; 
     height: 100vh;
+}
+
+.portfolio-item {
+    background: teal; 
+    font-weight: bold; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+}
+
+.one {
+    grid-row: span 3;
+}
+
+.two {
+    grid-row: span 3
+}
+
+.three {
+    grid-row: span 3
+}
+
+.four {
+    grid-row: span 3
+}
+
+.portfolio {
+    display: grid; 
+    height: 100%; 
+    grid-template-rows: repeat(6, 1fr); 
+    grid-template-columns: repeat(2, 1fr); 
+    grid-gap: 20px;
 }
 
 /*** Decorative Line for Contact and About Me Page ***/
