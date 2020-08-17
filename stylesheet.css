@@ -36,6 +36,18 @@ body {
     height: 100vh;
 }
 
+h1 {
+    opacity: 0;
+    transition-duration: 250ms;
+    
+}
+
+h1:hover {
+    opacity: 1;
+
+}
+
+
 .portfolio-item {
     font-weight: bold; 
     display: flex; 
@@ -45,25 +57,73 @@ body {
 
 .one {
     grid-row: span 3;
-    background-image: url("Assets/Images/Dinner-Dice-Portfolio.PNG");
+    background-image: url("Assets/Images/CodingQuiz.png");
     background-size: cover;
-    background-repeat: no-repeat;
+    background-position: center;
+    opacity: .25;
+    transition-duration: 250ms;
+    
+}
+
+.one:hover {
+    opacity: 1;
+    border-style: solid;
+    border-color: lightseagreen;
+    border-width: 1px;
+    cursor: pointer;
 }
 
 .two {
     grid-row: span 3;
-    background-image: url("Assets/Images/Dinner-Dice-Portfolio.PNG");
+    background-image: url("Assets/Images/DinnerDice.png");
+    background-size: cover;
+    opacity: .25;
+    transition-duration: 250ms;
+    text
     
+}
+
+.two:hover {
+    opacity: 1;
+    border-style: solid;
+    border-color: lightseagreen;
+    border-width: 1px;
+    cursor: pointer;
 }
 
 .three {
     grid-row: span 3;
-    background-image: url("Assets/Images/Dinner-Dice-Portfolio.PNG");
+    background-image: url("Assets/Images/PasswordGenerator.png");
+    background-size: cover;
+    background-position: center;
+    opacity: .25;
+    transition-duration: 250ms;
+}
+.three:hover {
+    opacity: 1;
+    border-style: solid;
+    border-color: lightseagreen;
+    border-width: 1px;
+    cursor: pointer;
+    
 }
 
 .four {
     grid-row: span 3;
-    background-image: url("Assets/Images/Dinner-Dice-Portfolio.PNG");
+    background-image: url("Assets/Images/WeatherDashboard.png");
+    background-size: cover;
+    background-position: center;
+    opacity: .25;
+    transition-duration: 250ms;
+}
+
+.four:hover {
+    opacity: 1;
+    border-style: solid;
+    border-color: lightseagreen;
+    border-width: 1px;
+    cursor: pointer;
+    
 }
 
 .portfolio {
