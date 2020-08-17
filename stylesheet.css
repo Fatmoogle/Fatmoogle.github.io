@@ -39,12 +39,13 @@ body {
 h1 {
     opacity: 0;
     transition-duration: 250ms;
-    
+    text-shadow: 4px 4px 6px #7b7b85;;
+    color: rgb(19, 19, 19);
 }
 
 h1:hover {
     opacity: 1;
-
+    text-align: center;
 }
 
 
@@ -60,7 +61,7 @@ h1:hover {
     background-image: url("Assets/Images/CodingQuiz.png");
     background-size: cover;
     background-position: center;
-    opacity: .25;
+    opacity: .50;
     transition-duration: 250ms;
     
 }
@@ -77,10 +78,8 @@ h1:hover {
     grid-row: span 3;
     background-image: url("Assets/Images/DinnerDice.png");
     background-size: cover;
-    opacity: .25;
+    opacity: .50;
     transition-duration: 250ms;
-    text
-    
 }
 
 .two:hover {
@@ -96,16 +95,16 @@ h1:hover {
     background-image: url("Assets/Images/PasswordGenerator.png");
     background-size: cover;
     background-position: center;
-    opacity: .25;
+    opacity: .50;
     transition-duration: 250ms;
 }
+
 .three:hover {
     opacity: 1;
     border-style: solid;
     border-color: lightseagreen;
     border-width: 1px;
     cursor: pointer;
-    
 }
 
 .four {
@@ -113,7 +112,7 @@ h1:hover {
     background-image: url("Assets/Images/WeatherDashboard.png");
     background-size: cover;
     background-position: center;
-    opacity: .25;
+    opacity: .50;
     transition-duration: 250ms;
 }
 
@@ -123,7 +122,6 @@ h1:hover {
     border-color: lightseagreen;
     border-width: 1px;
     cursor: pointer;
-    
 }
 
 .portfolio {
@@ -168,4 +166,45 @@ footer {
         margin: auto;
         margin-bottom: 15px;
     }
+}
+
+@media (max-width: 600px) {
+    .portfolio {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .one {
+        padding: 10%;
+    }
+    .two {
+        padding: 10%;
+    }
+    .three {
+        padding: 10%;
+    }
+    .four {
+        padding: 10%;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+}
+
+@media (max-width: 430px) {
+    .one {
+        padding: 5%;
+    }
+    .two {
+        padding: 5%;
+    }
+    .three {
+        padding: 5%;
+    }
+    .four {
+        padding: 5%;
+    }
+
+
 }
