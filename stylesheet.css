@@ -220,6 +220,8 @@ footer {
     left: 50%;
     transform: translate(-50%, -50%);
     position: relative;
+    padding: 20px;
+
 }
 
 .modal-bg {
@@ -251,4 +253,37 @@ footer {
     top: 10px;
     right: 10px;
     cursor: pointer;
+}
+
+#modal-header {
+    text-align: center;
+    
+}
+
+#modal-para {
+    text-align: center;
+}
+
+.btnContainer {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+
+}
+
+.githubBtn {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding: 5px;
+    border-radius: 50px;
+}
+
+.applicationBtn {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding: 5px;
+    border-radius: 50px;
+    
 }
