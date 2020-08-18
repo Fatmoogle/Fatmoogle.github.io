@@ -143,70 +143,7 @@ h1:hover {
     margin: 10px;
 }
 
-/*** Footer ***/
-
-footer {
-    flex-shrink: 0;
-    left: 0;
-    bottom: 0;
-    padding: 15px;
-    width: 100%;
-    background-color: darkgrey;
-    color: black;
-    text-align: center;
-}
-
-/*** Media Queries ***/
-
-@media (max-width: 400px) {
-    body {
-        font-size: 20px;
-    }
-    .container img {
-        float: none;
-        margin: auto;
-        margin-bottom: 15px;
-    }
-}
-
-@media (max-width: 600px) {
-    .portfolio {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-    .one {
-        padding: 10%;
-    }
-    .two {
-        padding: 10%;
-    }
-    .three {
-        padding: 10%;
-    }
-    .four {
-        padding: 10%;
-    }
-
-    h1 {
-        font-size: 2em;
-    }
-}
-
-@media (max-width: 430px) {
-    .one {
-        padding: 5%;
-    }
-    .two {
-        padding: 5%;
-    }
-    .three {
-        padding: 5%;
-    }
-    .four {
-        padding: 5%;
-    }
-}
+/*** Modal Styling ***/
 
 .modal {
     display: flex;
@@ -221,7 +158,6 @@ footer {
     transform: translate(-50%, -50%);
     position: relative;
     padding: 20px;
-
 }
 
 .modal-bg {
@@ -257,7 +193,6 @@ footer {
 
 #modal-header {
     text-align: center;
-    
 }
 
 #modal-para {
@@ -267,8 +202,7 @@ footer {
 .btnContainer {
     display: flex;
     flex-direction: row;
-    width: 50%;
-
+    width: 70%;
 }
 
 .githubBtn {
@@ -277,6 +211,13 @@ footer {
     justify-content: center;
     padding: 5px;
     border-radius: 50px;
+    margin-bottom: 5px;
+    opacity: .75;
+    transition-duration: 250ms;
+}
+
+.githubBtn:hover {
+    opacity: 1;
 }
 
 .applicationBtn {
@@ -285,5 +226,92 @@ footer {
     justify-content: center;
     padding: 5px;
     border-radius: 50px;
-    
+    margin-bottom: 5px;
+    opacity: .75;
+    transition-duration: 250ms;
 }
+
+.applicationBtn:hover {
+    opacity: 1;
+}
+
+/*** Footer ***/
+
+footer {
+    flex-shrink: 0;
+    left: 0;
+    bottom: 0;
+    padding: 15px;
+    width: 100%;
+    background-color: darkgrey;
+    color: black;
+    text-align: center;
+}
+
+
+/*** Media Queries ***/
+
+@media (max-width: 400px) {
+    body {
+        font-size: 20px;
+    }
+    .row-1 {
+        font-size: 40px !important;
+    }
+    .container img {
+        float: none;
+        margin: auto;
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 600px) {
+    .portfolio {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .one {
+        padding: 10%;
+    }
+    .two {
+        padding: 10%;
+    }
+    .three {
+        padding: 10%;
+    }
+    .four {
+        padding: 10%;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+    .modal {
+        width: 90% !important;
+    }
+    .btnContainer {
+        flex-direction: column !important;
+        width: 50% !important;
+    }
+
+}
+
+@media (max-width: 430px) {
+    .one {
+        padding: 5%;
+    }
+    .two {
+        padding: 5%;
+    }
+    .three {
+        padding: 5%;
+    }
+    .four {
+        padding: 5%;
+    }
+    .btnContainer {
+        font-size: 1em;
+    }
+}
+
