@@ -63,7 +63,7 @@ h1:hover {
     background-position: center;
     opacity: .50;
     transition-duration: 250ms;
-    
+    height: 100%;
 }
 
 .one:hover {
@@ -80,6 +80,7 @@ h1:hover {
     background-size: cover;
     opacity: .50;
     transition-duration: 250ms;
+    height: 100%;
 }
 
 .two:hover {
@@ -97,6 +98,7 @@ h1:hover {
     background-position: center;
     opacity: .50;
     transition-duration: 250ms;
+    height: 100%;
 }
 
 .three:hover {
@@ -114,6 +116,7 @@ h1:hover {
     background-position: center;
     opacity: .50;
     transition-duration: 250ms;
+    height: 100%;
     
 }
 
