@@ -608,11 +608,11 @@ Media Queries
 
 @media(max-width: 500px) {
     .welcomeText {
-        width: 50%;
+        width:60%;
         text-align: center;
         margin: auto;
         font-size: .5em;
-        letter-spacing: 2px
+        letter-spacing: 2px;
     }
 
     .welcome img {
@@ -621,31 +621,44 @@ Media Queries
         height: 250px;
     }
 
-    .container h1 {
-        font-size: 50px;
-        letter-spacing: 0;
-    }
-
     .bio > h1 {
-        font-size: 3em;
-    }
-
-    .bio > h2 {
         font-size: 2em;
     }
 
+    .bio > h2 {
+        font-size: 1.5em;
+    }
+
     .bio > h3 {
-        font-size: 1.3em;
+        font-size: 1.2em;
     }
 
     .details ul {
         font-size: 1em;
     }
 
-    #profilePic1 {
-        max-width: 70%;
-        max-height: 70%;
+    .education img {
+        width: 50%;
     }
+    
+    #profilePic1 {
+        max-width: 200px;
+        max-height: 200px;
+    }
+
+    #profilePic2,
+    #profilePic3,
+    #profilePic4 {
+        width: 50px;
+        height: 50px;
+    }
+
+    .container h1 {
+        font-size: 50px;
+        letter-spacing: 0;
+        height: 20vh;
+    }
+
     #CodingQuiz {
         font-size: 25px;
     }
