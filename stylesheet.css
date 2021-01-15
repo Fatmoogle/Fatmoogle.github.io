@@ -40,7 +40,7 @@ Intro Welcome Page
 .welcome-container {
     background-color: #4DA8DA;
     width: 100%;
-    height: 40%;
+    height: 45%;
     transform: skewY(-11deg);
     box-shadow:
     -4px -4px 5px 0 rgba(255,255,255,0.3),
@@ -687,6 +687,7 @@ Media Queries
     .contactPage {
         height: 50vh;
     }
+
     .contactPage h1 {
         font-size: 25px;
         margin: 2px;
@@ -696,5 +697,8 @@ Media Queries
     .contactBtns {
         width: 80%;
         font-size: .5em;
+        outline-style: none;
     }
+    
+    a:visited { text-decoration: none; color:red; }
 }
