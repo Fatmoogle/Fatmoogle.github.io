@@ -700,5 +700,9 @@ Media Queries
         outline-style: none;
     }
     
-    a:visited { text-decoration: none; color:red; }
+    a:visited {
+        text-decoration: none;
+        color:black;
+    }
+    
 }
