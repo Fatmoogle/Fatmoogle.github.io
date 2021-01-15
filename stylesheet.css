@@ -35,10 +35,6 @@ Intro Welcome Page
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    /* height: 100vh;
-    width: 100%;
-
-    position: relative; */
 }
 
 .welcome-container {
@@ -618,9 +614,32 @@ Media Queries
         font-size: .5em;
         letter-spacing: 2px
     }
+
+    .welcome img {
+        margin-top: 30px;
+        width: 200px;
+        height: 250px;
+    }
+
     .container h1 {
         font-size: 50px;
         letter-spacing: 0;
+    }
+
+    .bio > h1 {
+        font-size: 3em;
+    }
+
+    .bio > h2 {
+        font-size: 2em;
+    }
+
+    .bio > h3 {
+        font-size: 1.3em;
+    }
+
+    .details ul {
+        font-size: 1em;
     }
 
     #profilePic1 {
