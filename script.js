@@ -5,6 +5,7 @@ $(document).ready(function() {
     const gitBtn = document.querySelector("#github");
     const oldImageUrl = "./Assets/Images/Profile_pic.jpg"
     let imageUrl = "";
+    const contactPage = document.querySelector(".contact2");
 
     card.on("click", function () {
         const className = $(this).attr('class');
@@ -74,4 +75,48 @@ $(document).ready(function() {
     }, () => {
         $("#profilePic1").css('background-image', 'url(' + oldImageUrl + ')');
     });
+
+
+
+    /* Interesection Observer for the contact page */
+
+    const options = {
+        threshold: .6
+    };
+
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+
+            /*Conditional was needed here because the observer was firing upon page load when it should not be. Now it adds and removes classes ONLY 
+            if the entry is intersecting. Entry contains alot of information, so console log to see all it includes.*/
+            
+            if (entry.isIntersecting) {
+                entry.target.classList.add('in-viewport');
+                console.log(entry.isIntersecting);
+                $("#githubPin").addClass("activatedGitHub");
+                $("#linkedinPin").addClass("activatedLinkedIn");
+                $("#emailPin").addClass("activatedEmail");
+            } else {
+                entry.target.classList.remove('in-viewport');
+                console.log(entry.isIntersecting);
+                $("#githubPin").removeClass("activatedGitHub");
+                $("#linkedinPin").removeClass("activatedLinkedIn");
+                $("#emailPin").removeClass("activatedEmail");
+            }
+            // console.log(entry.target);
+            // $("#githubPin").addClass("activatedGitHub");
+            // alert("Hey");
+        })
+    }, options);
+
+    observer.observe(contactPage);
 });
+
+
+// entries.forEach(entry => {
+//     if (entry.intersectionRatio > 0) {
+//       entry.target.classList.add('in-viewport');
+//     } else {
+//       entry.target.classList.remove('in-viewport');
+//     }
+//   });

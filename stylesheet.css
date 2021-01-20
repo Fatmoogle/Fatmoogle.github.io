@@ -1,6 +1,10 @@
-/********
-CSS Reset
-*********/
+/*****************
+******************
+
+----CSS Reset----
+
+******************
+******************/
 
 * {
     margin: 0;
@@ -9,9 +13,13 @@ CSS Reset
     outline: none;
 }
 
-/***********
-Basic Styling
-************/
+/***********************
+************************
+
+-----Basic Styling-----
+
+************************
+************************/
 
 body {
     width: 100%;
@@ -22,9 +30,13 @@ body {
     /* line-height: 1.8em; */
 }
 
-/*****************
-Intro Welcome Page
-******************/
+/**************************
+***************************
+
+-----Intro Welcome Page-----
+
+***************************
+***************************/
 
 .welcome {
     max-width: 100%;
@@ -103,9 +115,13 @@ a:visited {
     text-decoration: none; color: black;
 }
 
-/***************
-About Me Section
-****************/
+/****************************
+*****************************
+
+------About Me Section-------
+
+*****************************
+*****************************/
 
 .aboutme {
     width: 100%;
@@ -118,21 +134,10 @@ About Me Section
     align-items: center;
 }
 
-
 .aboutme-card {
     max-width: 100%;
     height: 100%;
     padding: 20px;
-    /*
-    padding: 30px;
-    width: 90%;
-    max-height: 90%;
-    position: relative;
-    box-shadow:
-    -4px -4px 5px 0 rgba(255,255,255,0.3),
-    7px 10px 6px 0 rgba(88, 88, 88, 0.35);
-    line-height: 30px;
-    margin: auto; */
 }
 
 .bio {
@@ -263,31 +268,19 @@ About Me Section
     background-size: cover;
 }
 
-#profilePic2:hover, #profilePic3:hover, #profilePic4:hover {
+#profilePic2:hover, 
+#profilePic3:hover, 
+#profilePic4:hover {
     opacity: .7;
 }
 
-/* #projectsBtn {
-    width: 170px;
-    height: 50px;
-    font-size: 20px;
-    color:rgb(88, 85, 85);
-    font-family: 'Calibri';
-    letter-spacing: 2px;
-    border-radius: 300px;
-    border: none;
-    box-shadow: 0px 8px 15px rgba(0,0,0,0.5);
-    background: #ccc;
-} */
+/**********************************
+***********************************
 
-/* #projectsBtn:hover {
-    opacity: .8;
-    cursor: pointer;
-} */
+----Card Styling for Portfolio-----
 
-/*************************
-Card Styling for Portfolio
-**************************/
+***********************************
+**********************************/
 
 .container {
     max-width: 1100px;
@@ -336,9 +329,13 @@ Card Styling for Portfolio
     font-size: 2.5rem;
 }
 
-/**********************************
-Card Titles and Links for Portfolio
-***********************************/
+/*****************************************
+******************************************
+
+---Card Titles and Links for Portfolio---
+
+******************************************
+*****************************************/
 
 .bug-logo {
     max-width: 50%;
@@ -380,9 +377,13 @@ Card Titles and Links for Portfolio
     opacity: .7;
 }
 
-/*************************
-Modal Pop-up for Portfolio
-**************************/
+/***********************************
+************************************
+
+-----Modal Pop-up for Portfolio-----
+
+************************************
+***********************************/
 
 .modal-bg {
     position: fixed;
@@ -455,42 +456,137 @@ Modal Pop-up for Portfolio
     opacity: .7;
 }
 
-/**************
-Contact Me Page 
-**************/
+/****************************
+*****************************
 
-.contactPage {
-    height: 100vh;
+--------Contact Page---------
+
+*****************************
+****************************/
+
+
+.contact2 {
     width: 100%;
+    height: 110vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-image: url(./Assets/Images/aboutme_background_reverse.png);
-    background-size: cover;
 }
 
-.contactPage h1 {
-    font-size: 50px;
-    margin: 50px;
-    letter-spacing: 6px;
+.contact2 h1 {
+    font-size: 3em;
+    letter-spacing: 3px;
+    height: 20vh;
+    font-weight: 900;
+    color: rgba(0, 0, 0, 0.856);
 }
 
-.contactBtns {
-    margin: 20px;
-    width: 45%;
+.circle {
+    color: black;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: rgb(255, 255, 255);
+    opacity: 0;
+    text-decoration: none;
 }
 
-.fa-envelope:hover {
-    opacity: .7;
-    cursor: pointer;
+/* Cirlce:after is the shadow of the icons. It has seperate styling and hover effects, as well as base styling
+that is transitioned back after the mouse is not hovering the icon anymore. */
+
+.circle:after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -25px;
+    height: 8px;
+    width: 100%;
+    box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, .6);
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.3);
+    transform: scale(1);
+    transition: transform .3s; 
 }
 
-/************
-Media Queries
-************/
+.circle:hover:after {
+	transform: scale(.75);
+    transition: transform .3s;
+    
+}
+
+/* This .circle i code is here so that when the mouse is no longer hovering, it transitions back to it's
+normal styling. */
+
+.circle i {
+    transform: scale(1);
+    transition: transform .3s;
+}
+
+.circle i:hover {
+    transform: scale(1.2);
+    transition: transform .3s, color .2s;
+    color: rgb(12, 163, 233);
+}
+
+#myPic {
+    background: none;
+    opacity: 1;
+    z-index: 2;  
+}
+
+#githubPin,
+#linkedinPin,
+#emailPin {
+    position: absolute;
+    transition-duration: 900ms;
+    background: none;
+}
+
+.contactButtons {
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+}   
+
+/********************************************************
+*********************************************************
+
+Classes that are added to the buttons in the contact page
+whenever the intersection observer comes into effect
+(code is in JS file)
+
+*********************************************************
+*********************************************************/
+
+.activatedGitHub {
+    transform: translateY(180px);
+    transition-delay: 400ms;
+    opacity: 1;
+}
+
+.activatedLinkedIn {
+    transform: translate(180px, -120%);
+    transition-delay: 200ms;
+    opacity: 1;
+}
+
+.activatedEmail {
+    transform: translate(-180px, -120%);
+    transition-delay: 600ms;
+    opacity: 1;
+}
+
+/**************************************
+***************************************
+
+-------------Media Queries-------------
+
+**************************************
+**************************************/
 
 @media(max-width: 1000px) {
     .welcome-container {
@@ -525,11 +621,6 @@ Media Queries
     .container h1 {
         font-size: 75px;
     }
-
-    /* .bio h1, h2, h3, p {
-        text-align: center;
-        margin: auto;
-    } */
 
     .bio h1,
     .bio h2,
@@ -595,15 +686,11 @@ Media Queries
         width: 100px;
     }
 
-    .contactPage h1 {
-        font-size: 40px;
-        margin: 40px;
-        letter-spacing: 3px;
+    .contact2 h1 {
+        font-size: 2.2em;
+        letter-spacing: 1px
     }
-    .contactBtns {
-        width: 90%;
-        font-size: .8em;
-    }
+
 }
 
 @media(max-width: 500px) {
@@ -683,26 +770,82 @@ Media Queries
     .aboutme-card {
         text-align: center;
     }
-
-    .contactPage {
-        height: 50vh;
-    }
-
-    .contactPage h1 {
-        font-size: 25px;
-        margin: 2px;
-        letter-spacing: 1px;
-    }
-
-    .contactBtns {
-        width: 80%;
-        font-size: .5em;
-        outline-style: none;
-    }
     
     a:visited {
-        text-decoration: none;
-        color:black;
+        /* text-decoration: none;
+        color:black; */
+    }
+
+    .contact2 {
+        height: 100vh;
+    }
+
+    .contact2 h1 {
+        font-size: 1.7em;
     }
     
+    #myPic {
+        font-size: 100px;
+    }
+        
+    .circle:after {
+        content: "";
+        display: block;
+        position: absolute;
+        bottom: -25px;
+        height: 8px;
+        width: 100%;
+        box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, .6);
+        border-radius: 50%;
+        background-color: rgba(0, 0, 0, 0.3);
+        transform: scale(1);
+        transition: transform .3s; 
+    }
+
+    .circle:hover:after {
+        transform: scale(.75);
+        transition: transform .3s;
+        
+    }
+
+    /* This .circle i code is here so that when the mouse is no longer hovering, it transitions back to it's
+    normal styling. */
+
+    .circle i {
+        font-size: 60px;
+        transform: scale(1);
+        transition: transform .3s;
+    }
+
+    .circle i:hover {
+        transform: scale(1.1);
+        transition: transform .3s, color .2s;
+        color: rgb(12, 163, 233);
+    }
+
+    /* A media query was needed for the classes below because the translation was too big for smaller screen sizes. */
+
+    .activatedGitHub {
+        transform: translateY(120px);
+        transition-delay: 400ms;
+        opacity: 1;
+    }
+    
+    .activatedLinkedIn {
+        transform: translate(120px, -120%);
+        transition-delay: 200ms;
+        opacity: 1;
+    }
+    
+    .activatedEmail {
+        transform: translate(-120px, -120%);
+        transition-delay: 600ms;
+        opacity: 1;
+    }
 }
+
+
+
+
+
+
