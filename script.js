@@ -46,6 +46,15 @@ $(document).ready(function() {
                 appBtn.setAttribute("onclick", "window.location.href='https://fatmoogle.github.io/Weather-Dashboard/';");
                 gitBtn.setAttribute("onclick", "window.location.href='https://github.com/Fatmoogle/Weather-Dashboard';");
                 break;
+            /** Employee Directory Modal **/
+            case "card dir":
+                console.log("You clicked Employee Directory");
+                modalBg.addClass("bg-active");
+                $(".modal").find("h2").text("Employee Directory");
+                $(".modal").find("p").text("Basic React Application that displays non-sensitive employee information with search functionality.");
+                appBtn.setAttribute("onclick", "window.location.href='https://fatmoogle.github.io/Employee_Directory/';");
+                gitBtn.setAttribute("onclick", "window.location.href='https://github.com/Fatmoogle/Employee_Directory';");
+                break;
         }
     });
 
