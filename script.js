@@ -12,46 +12,51 @@ $(document).ready(function() {
         switch(className) {
             /** DBUGME Modal **/
             case "card bug":
-                console.log("You clicked DEBUGME");
+                // console.log("You clicked DEBUGME");
                 modalBg.addClass("bg-active");
                 $(".modal").find("h2").text("DEBUGME");
                 $(".modal").find("p").text("Social application where you connect with others as a student or as a mentor and share your knowledge!");
+                $(".modal").find(".technologies").text("ReactJs, JavaScript, HTML5, CSS3, React Spring, Bootstrap, MongoDB, Mongoose, Express, Node JS, Axios, Cloudinary");
                 appBtn.setAttribute("onclick", "window.location.href='https://dbugme.herokuapp.com';");
                 gitBtn.setAttribute("onclick", "window.location.href='https://github.com/jesseodonoghue/project-3';");
                 break;
             /** Coding Quiz! Modal **/
             case "card quiz":
-                console.log("You clicked Coding Quiz!");
+                // console.log("You clicked Coding Quiz!");
                 modalBg.addClass("bg-active");
                 $(".modal").find("h2").text("Coding Quiz!");
                 $(".modal").find("p").text("Fun and silly game created using JavaScript to test your knowledge on basic coding ideas.");
+                $(".modal").find(".technologies").text("JavaScript, HTML5, CSS3");
                 appBtn.setAttribute("onclick", "window.location.href='https://fatmoogle.github.io/Coding-Quiz/';");
                 gitBtn.setAttribute("onclick", "window.location.href='https://github.com/Fatmoogle/Coding-Quiz';");
                 break;
             /** Dinner Dice Modal **/
             case "card dice":
-                console.log("You clicked Dinner Dice");
+                // console.log("You clicked Dinner Dice");
                 modalBg.addClass("bg-active");
                 $(".modal").find("h2").text("Dinner Dice");
                 $(".modal").find("p").text("A mobile friendly application created to generate random recipes for drinks and food using two API’s.");
+                $(".modal").find(".technologies").text("JavaScript, HTML5, CSS3, Bootstrap, jQuery, 2 Public APIs");
                 appBtn.setAttribute("onclick", "window.location.href='https://victoriagfield.github.io/Dinner_Dice/';");
                 gitBtn.setAttribute("onclick", "window.location.href='https://github.com/victoriagfield/Dinner_Dice';");
                 break;
             /** Weather Dashboard Modal **/
             case "card dash":
-                console.log("You clicked Weather Dashboard");
+                // console.log("You clicked Weather Dashboard");
                 modalBg.addClass("bg-active");
                 $(".modal").find("h2").text("Weather Dashboard");
                 $(".modal").find("p").text("Weather application that allows user to search for the current and 5 day forecast of a city.");
+                $(".modal").find(".technologies").text("JavaScript, HTML5, CSS3, Bootstrap, jQuery, OpenWeatherMap API");
                 appBtn.setAttribute("onclick", "window.location.href='https://fatmoogle.github.io/Weather-Dashboard/';");
                 gitBtn.setAttribute("onclick", "window.location.href='https://github.com/Fatmoogle/Weather-Dashboard';");
                 break;
             /** Employee Directory Modal **/
             case "card dir":
-                console.log("You clicked Employee Directory");
+                // console.log("You clicked Employee Directory");
                 modalBg.addClass("bg-active");
                 $(".modal").find("h2").text("Employee Directory");
                 $(".modal").find("p").text("Basic React Application that displays non-sensitive employee information with search functionality.");
+                $(".modal").find(".technologies").text("ReactJs, JavaScript, HTML5, CSS3, Bootstrap, RandomUser API");
                 appBtn.setAttribute("onclick", "window.location.href='https://fatmoogle.github.io/Employee_Directory/';");
                 gitBtn.setAttribute("onclick", "window.location.href='https://github.com/Fatmoogle/Employee_Directory';");
                 break;
@@ -90,7 +95,7 @@ $(document).ready(function() {
     /* Interesection Observer for the contact page */
 
     const options = {
-        threshold: .6
+        threshold: .3
     };
 
     const observer = new IntersectionObserver((entries, observer) => {
@@ -101,13 +106,13 @@ $(document).ready(function() {
             
             if (entry.isIntersecting) {
                 entry.target.classList.add('in-viewport');
-                console.log(entry.isIntersecting);
+                // console.log(entry.isIntersecting);
                 $("#githubPin").addClass("activatedGitHub");
                 $("#linkedinPin").addClass("activatedLinkedIn");
                 $("#emailPin").addClass("activatedEmail");
             } else {
                 entry.target.classList.remove('in-viewport');
-                console.log(entry.isIntersecting);
+                // console.log(entry.isIntersecting);
                 $("#githubPin").removeClass("activatedGitHub");
                 $("#linkedinPin").removeClass("activatedLinkedIn");
                 $("#emailPin").removeClass("activatedEmail");
