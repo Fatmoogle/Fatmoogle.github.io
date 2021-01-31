@@ -1,4 +1,4 @@
-Link to Portfolio:
+Link to Portfolio Page:
 
 https://fatmoogle.github.io/
 
