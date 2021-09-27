@@ -10,6 +10,16 @@ $(document).ready(function() {
     card.on("click", function () {
         const className = $(this).attr('class');
         switch(className) {
+             /** PetsLuv Modal **/
+            case "card luv":
+                // console.log("You clicked PetsLuv");
+                modalBg.addClass("bg-active");
+                $(".modal").find("h2").text("PetsLuv");
+                $(".modal").find("p").text("A gallery app for pets using React and Redux. Allows users to click and download any or all images! (Application will be live shortly)");
+                $(".modal").find(".technologies").text("ReactJs, Redux, JavaScript, HTML5, CSS3, Material UI, Styled Components, Node JS, Axios");
+                // appBtn.setAttribute("onclick", "window.location.href='https://dbugme.herokuapp.com';");
+                gitBtn.setAttribute("onclick", "window.location.href='https://github.com/Fatmoogle/eulerity_app';");
+                break;
             /** DBUGME Modal **/
             case "card bug":
                 // console.log("You clicked DEBUGME");
