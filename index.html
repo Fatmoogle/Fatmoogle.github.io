@@ -1,94 +1,150 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Alex Varela Portfolio</title>
-    <!-- Mobile Responsive Meta Tag -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- Bootstrap Link -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <!-- Google Fonts Link -->
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400&display=swap" rel="stylesheet">
-    <!-- CSS Stylesheet Link -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alex Varela</title>
+    <!-- CSS Stylesheet Link-->
     <link rel="stylesheet" href="stylesheet.css">
-    <!-- Icons -->
+    <!-- Google Font Links for Text -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@500&family=Lato:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cabin&family=Lobster&family=Red+Rose&family=Rowdies:wght@300&display=swap" rel="stylesheet">  
+    <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@500&display=swap" rel="stylesheet">
+    <!-- AOS Library Link -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> 
+    <!-- LinkedIn Icon Links -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
-    <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="index.html">Alex Varela</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                <a class="nav-link" href="index.html">About<span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link" href="portfolio.html">Portfolio</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    <!-- In Page Styling --> 
-    <style>
-        .container {margin-top: 20px; margin-bottom: 20px;background-color: rgb(139, 129, 129); border-radius: 20px; padding: 15px 15px 60px 15px; width: 100%; position: relative;}
-        .container:after {content: '';display: block; width: 90%; height: 100px; bottom: 0; box-shadow: 0 2px 100px; position: absolute; left: 5%; z-index: -1;}
-        .row-1 {font-size: 80px; font-weight: 400; text-align: center; letter-spacing: 10px;}
-        .row-2 {text-align: center;}
-        img {float: left; margin-right: 30px; margin-top: 5px;}
-        p {font-size: 20px;}
-    </style>
-    <!-- jQuery, javascript file for the Bootstrap's javascript file to function -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <!-- Bootstrap's javascript file that allows the dropdown menu to work  -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/8abda38bae.js" crossorigin="anonymous"></script>
+    <!-- jQuery Link -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
 </head>
 <body>
-    <main class="container">
-        <header class="row-1">
-            <div class="col-md-12">Welcome</div> 
-        </header>
-        <!-- Decorative Line -->
-        <figure class="solid-line"></figure>
-        <!-- My Picture and Bio -->
-        <section class="row-2">
-            <!-- Picture -->
-            <div class="col-md-2">
-                <img src="Assets/Images/alex.jpg" width="200" height="200">
+    <div class="welcome">
+        <div class="welcome-container">
+            <div class="welcomeText">
+                <span id="name" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1200">
+                    Alex Varela
+                </span>
+                <span id="webDev" data-aos="fade-down" data-aos-delay="500" data-aos-duration="1200">
+                    Full Stack Web Developer
+                </span>
+                <span id="skills" data-aos="fade-in" data-aos-delay="900" data-aos-duration="1200">HTML/CSS | JavaScript | jQuery | Express | React | MongoDB | NodeJS</span>
             </div>
-            <!-- My Bio Information -->
-            <div class="col-md-10">
-                <p>I'm Alex, and I'm from Asheville North Carolina with a background in both Recreational Therapy as well as Web Development. People always ask me if I prefer the beach or the mountains,
-                and honestly I prefer the mountains. They are my home. I've been to numerous beaches, but nothing quite compares
-                to the feeling of going to a cabin in the woods and being surrounded by nothing but nature.
-                </p>
-                <br>
-                <p>I enjoy drumming, playing video games, making youtube videos, coffee, and playing with my parents spoiled rotten dog Roxie
-                who is the cutest fluff ball in the world. 
-                </p>
-                <br>
+            <!-- <div class="welcomeIcons">
+                <a href="https://www.linkedin.com/in/alexander-varela-5a852295/" target="blank"><i class="fab fa-linkedin fa-2x"></i></a>
+                <a href="https://github.com/Fatmoogle" target="blank"><i class="fab fa-github fa-2x"></i></a>
+            </div> -->
+        </div>
+        <img src="./Assets/Images/Elgoomtaf2.png" width="250px" height="300px" data-aos="fade-in" data-aos-delay="1500" data-aos-duration="1200">
+    </div>
+    
+    <div class="aboutme">
+        <div class="aboutme-card"  data-aos="fade-in" data-aos-delay="700" data-aos-duration="1200">
+            <div class="bio" >
+                <h1>Welcome</h1>
+                <h2>About Me</h2>
+                <h3>Full-Stack Web Developer</h3>
+                <hr>
+                <p class="intro"><strong style="font-size: 1.1em;">Web Developer</strong> based in <strong style="font-size: 1.1em;">Asheville, North  Carolina</strong>. I am a recent graduate of the University of North Carolina at Chapel Hill with new honed skills in <strong  style="font-size: 1.1em;">JavaScript, React, HTML and CSS, and more.</strong> </p>
+            </div>
+            <!-- <a href="#containerId"><button id="projectsBtn">My Projects</button></a> -->
+            <div class="details" data-aos="fade-in" data-aos-delay="1200" data-aos-duration="1200">
+                    <h1>Education</h1>
+                        <div class="education">
+                            <img src="./Assets/Images/WCU.png">
+                            <img src="./Assets/Images/UNC.png">
+                        </div>
+                    <h1>Interests</h1>
+                    <ul style="list-style-type:none;">
+                        <li><i class="fas fa-code"></i>Coding</li>
+                        <li><i class="fas fa-gamepad"></i>Gaming</li>
+                        <li><i class="fas fa-drum"></i>Drums</li>
+                    </ul>
+            </div>
+        </div>
+        <div class="aboutme-pic"  data-aos="fade-in" data-aos-duration="1200">
+            <!-- <img src="./Assets/Images/Profile_pic.jpg" width="400px" height="400px"> -->
+            <div id="profilePic1"></div>
+            <div id="profilePic2"></div>
+            <div id="profilePic3"></div>
+            <div id="profilePic4"></div>
+        </div>
+    </div>
+
+    <div class="container" id="containerId">
+        <h1>Projects</h1>
+        <section class="card luv">
+            <img src="./Assets/Images/PetsLuvAppImg.PNG" alt="PetsLuv App">
+            <div class="bug-logo">
+                <img id="logo" src="./Assets/Images/PetsLuv.PNG">
             </div>
         </section>
-    </main>
-    <!-- Contact Information and Social Media Links -->
-    <section class="row" style="text-align: center; width: 100%; margin-top: 60px;">
-        <address class="col-md-12">
-            <h2>Contact & Social Media Info</h2>
-            <ul>
-            <li><strong>Email: </strong> <a href="mailto:alexvar93@gmail.com">alexvar93@gmail.com</a></li>
-            <li><strong>Resume: </strong> <a href="https://tinyurl.com/yxuptycf">https://tinyurl.com/yxuptycf</a></li>
-            <li><strong>Portfolio: </strong><a href="portfolio.html" target="blank">https://fatmoogle.github.io/portfolio.html</a></li>
-            <li><strong>Github: </strong><a href="https://github.com/Fatmoogle" target="blank">https://github.com/Fatmoogle</a></li>
-            <li><strong>LinkedIn: </strong><a href="https://www.linkedin.com/in/alexander-varela-5a852295/" target="blank">https://www.linkedin.com/in/alexander-varela-5a852295/</a></li>
-            </ul>
-        </address>
-    </section>
-    <footer>
-        <a target="blank" href="https://www.linkedin.com/in/alexander-varela-5a852295/"><i class='fab fa-linkedin' style='font-size:36px'></i></a>
-    </footer>
+        <section class="card bug">
+            <img src="./Assets/Images/DBUGME_pic.PNG" alt="DBUGME App">
+            <div class="bug-logo">
+                <img id="logo" src="./Assets/Images/debugmelogo.png">
+            </div>
+        </section>
+        <section class="card quiz">
+            <img src="./Assets/Images/CodingQuiz.png" alt="Coding Quiz App">
+            <div>
+                <p id="CodingQuiz">Coding Quiz!</p>
+            </div>
+        </section>
+        <section class="card dice">
+            <img src="./Assets/Images/DinnerDice.png" alt="Dinner Dice App">
+            <div>
+                <p id="DinnerDice">Dinner Dice</p>
+            </div>
+        </section>
+        <section class="card dash">
+            <img src="./Assets/Images/WeatherDashboard.png" alt="Coding Quiz App">
+            <div>
+                <p id="WeatherDash">Weather Dashboard</p>
+            </div>
+        </section>
+        <section class="card dir">
+            <img src="./Assets/Images/Emp.Dir.PNG" alt="Employee Directory App">
+            <div>
+                <p id="EmployeeDirectory">Employee Directory</p>
+            </div>
+        </section>
+
+        <div class="modal-bg">
+            <div class="modal">
+                <h2>Modal Pop-up</h2>
+                <p></p>
+                <div class="btn-box">
+                <button type="button" id="github" class="btn btn-primary">GitHub</button>
+                <button type="button" id="app" class="btn btn-primary">Application</button>
+                </div>
+                <h3>Technologies</h3>
+                <hr>
+                <span class="technologies"></span>
+                <span class="modal-close">X</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="contact2">
+        <h1 data-aos="fade-in" data-aos-duration="1500" data-aos-delay="500">Let's work together.</h1>
+        <div class="contactButtons">
+            <i id="myPic" class="fas fa-laptop-code fa-8x"></i>
+            <a class="circle" id="githubPin" href="https://github.com/Fatmoogle" target="blank"><i class="fab fa-github fa-5x"></i></a>
+            <a class="circle" id="linkedinPin" href="https://www.linkedin.com/in/alexander-varela-5a852295/" target="blank"><i class="fab fa-linkedin fa-5x"></i></a>
+            <a class="circle" id="emailPin" href="" target="blank"><i class="fas fa-envelope fa-5x"></i></a>
+        </div>
+    </div>
+
+    <!-- JavaScript File Link -->
+    <script src="script.js"></script>
+    <!-- AOS Script Links -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
