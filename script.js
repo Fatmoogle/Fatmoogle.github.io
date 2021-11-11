@@ -51,7 +51,7 @@ modal4.addEventListener('click', function(){
     gitBtn.setAttribute("onclick", "window.location.href='https://github.com/Fatmoogle/Weather-Dashboard';");
 })
 
-/* Function to close modal window */
+/*  Function to close modal window  */
 
 modalClose.addEventListener('click', function(){
     modalBg.classList.remove("bg-active");
