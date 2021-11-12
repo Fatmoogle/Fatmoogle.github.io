@@ -4,21 +4,42 @@ $(document).ready(function() {
     const card = $(".card");
     const appBtn = document.querySelector("#app");
     const gitBtn = document.querySelector("#github");
+    const modal = $(".modal");
+    const video = document.querySelector("iframe");
+    const videoWrapper = document.querySelector(".videoWrapper");
     const oldImageUrl = "./Assets/Images/Profile_pic.jpg"
     let imageUrl = "";
     const contactPage = document.querySelector(".contact2");
 
+    // Set modal class to modalVideo, so you can have its own class styles. So on click, set modal, to modalVideo
+
     card.on("click", function () {
         const className = $(this).attr('class');
         switch(className) {
-             /** PetsLuv Modal **/
+            /** RGB Modal **/
+            case "card rgb":
+                // console.log("You clicked RGB Lightscript");
+                modalBg.addClass("bg-active");
+                modal.addClass("video")
+                $(".modal").find("h2").text("Custom RGB Lightscript");
+                $(".modal").find("p").text("A Perlin Noise inspired custom lightscript designed for SignalRGB to light up your RGB devices. Created using HTML Canvas and SignalRGB Engine.");
+                $(".modal").find(".technologies").text("HTML, HTML Canvas, CSS, Javascript, SignalRGB");
+                gitBtn.classList.add("btnActive");
+                gitBtn.setAttribute("onclick", "window.location.href='https://github.com/Fatmoogle/SignalRGB_CustomScript';");
+                appBtn.style.display = "none";
+                videoWrapper.classList.add("active");
+                video.style.display = "block";
+                video.setAttribute("src", "https://www.youtube.com/embed/IzhDbWGm3Tw");
+                video.setAttribute("frameborder", "0");
+                break;
+            /** PetsLuv Modal **/
             case "card luv":
                 // console.log("You clicked PetsLuv");
                 modalBg.addClass("bg-active");
                 $(".modal").find("h2").text("PetsLuv");
                 $(".modal").find("p").text("A gallery app for pets using React and Redux. Allows users to click and download any or all images! (Application will be live shortly)");
                 $(".modal").find(".technologies").text("ReactJs, Redux, JavaScript, HTML5, CSS3, Material UI, Styled Components, Node JS, Axios");
-                // appBtn.setAttribute("onclick", "window.location.href='https://dbugme.herokuapp.com';");
+                appBtn.setAttribute("onclick", "window.location.href='https://petsluv.herokuapp.com/';")
                 gitBtn.setAttribute("onclick", "window.location.href='https://github.com/Fatmoogle/eulerity_app';");
                 break;
             /** DBUGME Modal **/
@@ -76,7 +97,13 @@ $(document).ready(function() {
 
     $(".modal-close").on("click", function() {
         modalBg.removeClass("bg-active");
+        modal.removeClass("video");
+        videoWrapper.classList.remove("active");
+        video.style.display = "none";
+        appBtn.style.display = "block";
+        gitBtn.classList.remove("btnActive");
     });
+    
     /* Functions to change large picture background image in about me section */
     $("#profilePic2").hover(() => {
         imageUrl = "./Assets/Images/profil_pic2.jpg";
@@ -119,17 +146,7 @@ $(document).ready(function() {
                 $("#linkedinPin").removeClass("activatedLinkedIn");
                 $("#emailPin").removeClass("activatedEmail");
             }
-            // console.log(entry.target);
-            // $("#githubPin").addClass("activatedGitHub");
-            // alert("Hey");
         })
     }, options);
     observer.observe(contactPage);
 });
-// entries.forEach(entry => {
-//     if (entry.intersectionRatio > 0) {
-//       entry.target.classList.add('in-viewport');
-//     } else {
-//       entry.target.classList.remove('in-viewport');
-//     }
-//   });

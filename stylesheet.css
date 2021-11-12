@@ -341,6 +341,19 @@ a:visited {
     border-style: solid;
     border-width: 1px;
     border-color: rgba(0, 0, 0, .1);
+    text-align: center;
+}
+
+.rgb-logo {
+    max-width: 50%;
+    margin: auto;
+    cursor: pointer;
+}
+
+.pet-logo {
+    max-width: 50%;
+    margin: auto;
+    cursor: pointer;
 }
 
 .bug-logo {
@@ -419,6 +432,24 @@ a:visited {
     align-items: center;
     text-align: center;
     position: relative;
+}
+
+.modal iframe {
+    display: none;
+    margin: 20px;
+    width: 560px;
+    height: 315px;
+    /* aspect-ratio: 16 / 9; */
+}
+
+.btnActive {
+    width: 30% !important; 
+}
+
+
+.video {
+    width: 60%;
+    height: 90%;
 }
 
 .modal p {
@@ -662,11 +693,6 @@ whenever the intersection observer comes into effect
         width: 100%;
     }
 
-    .bug-logo {
-        width: 50%;
-        margin: auto;
-    }
-
     #CodingQuiz {
         font-size: 35px;
     }
@@ -686,6 +712,19 @@ whenever the intersection observer comes into effect
 
     .modal button {
         margin: 15px 0;
+    }
+
+    .modal iframe {
+        display: none;
+        margin: 20px;
+        width: 300px;
+        height: 169px;
+        /* aspect-ratio: 16 / 9; */
+    }
+
+    .video {
+        width: 65%;
+        height: 70%;
     }
 
     .btn-box {
@@ -764,20 +803,24 @@ whenever the intersection observer comes into effect
     }
 
     #CodingQuiz {
-        font-size: 25px;
+        font-size: 20px;
     }
 
     #DinnerDice {
-        font-size: 55px;
+        font-size: 35px;
     }
 
     #WeatherDash {
-        font-size: 35px;
+        font-size: 30px;
+    }
+
+    #EmployeeDirectory {
+        font-size: 30px;
     }
 
     .modal {
         width: 90%;
-        height: 60%;
+        height: 65%;
     }
 
     .modal button {
@@ -865,8 +908,6 @@ whenever the intersection observer comes into effect
         opacity: 1;
     }
 }
-
-
 
 
 
