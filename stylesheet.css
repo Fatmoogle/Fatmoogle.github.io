@@ -823,6 +823,10 @@ whenever the intersection observer comes into effect
         height: 65%;
     }
 
+    .video {
+        height: 90%;
+    }
+
     .modal button {
         margin: 1px 0;
     }
