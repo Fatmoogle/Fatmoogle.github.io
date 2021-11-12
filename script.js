@@ -29,7 +29,7 @@ $(document).ready(function() {
                 appBtn.style.display = "none";
                 videoWrapper.classList.add("active");
                 video.style.display = "block";
-                video.setAttribute("src", "https://www.youtube.com/embed/IzhDbWGm3Tw");
+                video.setAttribute("src", "https://www.youtube.com/embed/lwBYb05a0cg");
                 video.setAttribute("frameborder", "0");
                 break;
             /** PetsLuv Modal **/
