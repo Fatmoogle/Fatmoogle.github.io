@@ -37,7 +37,7 @@ function Home() {
                     </div>
                 </div>
                 <div className="home-visual">
-                    <img src="/Assets/Images/Elgoomtaf2.png" alt="Alex Varela" className="profile-image" />
+                    <img src="/assets/Images/Elgoomtaf2.png" alt="Alex Varela" className="profile-image" />
                     <div className="visual-circle"></div>
                     <div className="visual-square"></div>
                     <div className="visual-triangle"></div>

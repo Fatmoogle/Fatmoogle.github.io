@@ -2,7 +2,7 @@ import { useState } from 'react'
 import './About.css'
 
 function About() {
-  const [mainImage, setMainImage] = useState('/Assets/Images/Profile_pic.jpg')
+  const [mainImage, setMainImage] = useState('/assets/Images/Profile_pic.jpg')
 
   return (
     <div className="about">
@@ -23,27 +23,27 @@ function About() {
             <div className="picture-thumbnails">
               <div
                 className="thumbnail"
-                onMouseEnter={() => setMainImage('/Assets/Images/Profile_pic.jpg')}
+                onMouseEnter={() => setMainImage('/assets/Images/Profile_pic.jpg')}
               >
-                <img src="/Assets/Images/Profile_pic.jpg" alt="Profile 1" />
+                <img src="/assets/Images/Profile_pic.jpg" alt="Profile 1" />
               </div>
               <div
                 className="thumbnail"
-                onMouseEnter={() => setMainImage('/Assets/Images/profil_pic2.jpg')}
+                onMouseEnter={() => setMainImage('/assets/Images/profil_pic2.jpg')}
               >
-                <img src="/Assets/Images/profil_pic2.jpg" alt="Profile 2" />
+                <img src="/assets/Images/profil_pic2.jpg" alt="Profile 2" />
               </div>
               <div
                 className="thumbnail"
-                onMouseEnter={() => setMainImage('/Assets/Images/profile_pic3.jpg')}
+                onMouseEnter={() => setMainImage('/assets/Images/profile_pic3.jpg')}
               >
-                <img src="/Assets/Images/profile_pic3.jpg" alt="Profile 3" />
+                <img src="/assets/Images/profile_pic3.jpg" alt="Profile 3" />
               </div>
               <div
                 className="thumbnail"
-                onMouseEnter={() => setMainImage('/Assets/Images/profile_pic4.jpg')}
+                onMouseEnter={() => setMainImage('/assets/Images/profile_pic4.jpg')}
               >
-                <img src="/Assets/Images/profile_pic4.jpg" alt="Profile 4" />
+                <img src="/assets/Images/profile_pic4.jpg" alt="Profile 4" />
               </div>
             </div>
           </div>
@@ -75,7 +75,7 @@ function About() {
                 <div className="education-list">
                   <div className="education-item">
                     <div className="education-logo">
-                      <img src="/Assets/Images/WCU.png" alt="Western Carolina University" />
+                      <img src="/assets/Images/WCU.png" alt="Western Carolina University" />
                     </div>
                     <div className="education-info">
                       <h4>Western Carolina University</h4>
@@ -84,7 +84,7 @@ function About() {
                   </div>
                   <div className="education-item">
                     <div className="education-logo">
-                      <img src="/Assets/Images/UNC.png" alt="University of North Carolina" />
+                      <img src="/assets/Images/UNC.png" alt="University of North Carolina" />
                     </div>
                     <div className="education-info">
                       <h4>UNC Chapel Hill</h4>
