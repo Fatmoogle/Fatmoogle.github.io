@@ -19,6 +19,17 @@ function Projects() {
     },
     {
       id: 2,
+      title: "24|7 Recon",
+      description: "Platform for reconciling financial transactions and ensuring data consistency across multiple systems. Uses AWS services for cloud infrastructure.",
+      image: null, // Text card
+      isBackend: true,
+      technologies: ["AWS", "TypeScript", "Drizzle ORM", "Hono", "PostgreSQL", ".NET", "REST API", "Windows Service"],
+      github: null, // Private company project
+      demo: null,
+      role: "Backend Developer"
+    },
+    {
+      id: 3,
       title: "Loss Report Extractor",
       description: "Automated cron job application that extracts text from PDF loss reports, generates CSV files, and sends bi-monthly email reports. Deployed on Google App Engine.",
       image: null, // Text card
@@ -29,7 +40,7 @@ function Projects() {
       role: "Backend Developer"
     },
     {
-      id: 3,
+      id: 4,
       title: "Diversified National-Qualia Bot",
       description: "Headless Playwright application that runs every 15 minutes to scrape client portal for documents and forward them to external API for processing.",
       image: null, // Text card
@@ -41,7 +52,7 @@ function Projects() {
     },
     // Bootcamp Projects
     {
-      id: 4,
+      id: 5,
       title: "DBUGME",
       description: "Social application where you connect with others as a student or as a mentor and share your knowledge!",
       image: "../assets/Images/DBUGME_pic.PNG",
@@ -51,7 +62,7 @@ function Projects() {
       demo: "https://dbugme.herokuapp.com"
     },
     {
-      id: 5,
+      id: 6,
       title: "PetsLuv",
       description: "A gallery app for pets using React and Redux. Allows users to click and download any or all images!",
       image: "../assets/Images/PetsLuvAppImg.PNG",
@@ -61,7 +72,7 @@ function Projects() {
       demo: "https://petsluv.herokuapp.com/"
     },
     {
-      id: 6,
+      id: 7,
       title: "Custom RGB Lightscript",
       description: "A Perlin Noise inspired custom lightscript designed for SignalRGB to light up your RGB devices. Created using HTML Canvas and SignalRGB Engine.",
       image: "../assets/Images/RGBCustomScript.png",

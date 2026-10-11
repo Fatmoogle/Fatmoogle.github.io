@@ -54,9 +54,9 @@ function About() {
             <div className="welcome-section fade-in">
               <h2>Welcome</h2>
               <p>
-                Software developer with proficiency in <strong>Node.js, Nest.js, HTML and CSS, SQL, C#, and more</strong>.
+                Software developer with proficiency in <strong>Node.js, Nest.js, HTML and CSS, SQL, C#, and more</strong>. I also have many years experience with <strong>Claude, Cursor, GitHub CoPilot, and other AI-assisted development tools and workflows</strong>.
                 I'm passionate about creating elegant, efficient solutions to complex problems
-                and building web applications that make a difference.
+                and building web applications that make a difference. 
               </p>
               <p>
                 As someone who began playing video games at a young age, I was always fascinated by the technology behind them.

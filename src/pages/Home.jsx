@@ -11,7 +11,7 @@ function Home() {
                     </h1>
                     <h2 className="home-subtitle">Full Stack Web Developer</h2>
                     <p className="home-description">
-                        Experienced backend developer specializing in Node.js, databases, and API design. Leveraging 4+ years of server-side experience to build robust full-stack applications.
+                        Experienced backend developer specializing in Node.js, databases, and API design. Leveraging 5+ years of server-side experience to build robust applications.
                     </p>
                     <div className="home-skills">
                         <span className="skill-tag">Node.js</span>
@@ -25,6 +25,9 @@ function Home() {
                         <span className="skill-tag">PostgreSQL</span>
                         <span className="skill-tag">React</span>
                         <span className="skill-tag">AI Assistance</span>
+                        <span className="skill-tag">Claude</span>
+                        <span className="skill-tag">GitHub CoPilot</span>
+                        <span className="skill-tag">Cursor</span>
 
                     </div>
                     <div className="home-cta">
